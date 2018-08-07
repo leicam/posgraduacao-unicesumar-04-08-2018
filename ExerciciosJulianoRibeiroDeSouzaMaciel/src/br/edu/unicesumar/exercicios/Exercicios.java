@@ -2,7 +2,7 @@ package br.edu.unicesumar.exercicios;
 
 //import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
-import java.io.File;
+//import java.io.File;
 import java.io.FileNotFoundException;
 //import java.io.FileOutputStream;
 import java.io.FileReader;
@@ -189,7 +189,7 @@ public class Exercicios {
 		List<Pessoa> pessoas = getPessoasComNome("./Resources/arquivoTeste.txt", filtro);
 		Optional<Pessoa> pessoa = encontrarPessoaMaisNova(pessoas);
 		
-		System.out.println(pessoa);
+		System.out.println(pessoa.get().firstName + ' ' + pessoa.get().birthYear);
 	}
 	
 	public Optional<Pessoa> encontrarPessoaMaisNova(List<Pessoa> pessoas){
